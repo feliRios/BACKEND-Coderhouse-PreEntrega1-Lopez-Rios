@@ -1,4 +1,4 @@
-import express, { urlencoded } from "express";
+import express from "express";
 
 // Importaciones de rutas
 import routerProd from "./routes/products.routes.js";
@@ -7,6 +7,7 @@ import routerCart from "./routes/carts.routes.js";
 const app = express();
 const PORT = 8080;
 
+// Middleware para enviar y recibir JSON
 app.use(express.json());
 
 // ***** Endpoints y server *****

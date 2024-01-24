@@ -19,7 +19,8 @@ routerCart.post("/", async (req, res) => {
 })
 
 routerCart.get("/:cid", async (req, res) => {
-  // Cuerpo del servicio GET de carts
+  // Cuerpo del servicio GET de carts. Lista los productos de un carrito
+  // dado su ID (cid)
   const cid = parseInt(req.params.cid);
   try {
     const cartProducts = await cm.getCartProducts(cid);
@@ -48,10 +49,6 @@ routerCart.post("/:cid/product/:pid", async (req, res) => {
     res.status(500).send(`Hubo un error: ${err}`);
   }
 
-})
-
-routerCart.delete("/", async (req, res) => {
-  // Cuerpo del servicio DELETE de carts
 })
 
 export default routerCart;

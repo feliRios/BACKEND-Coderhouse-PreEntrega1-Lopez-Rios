@@ -5,7 +5,8 @@ const routerProd = Router();
 const pm = new ProductManager();
 
 routerProd.get("/", async (req, res) => {
-  // Cuerpo del servicio GET de products
+  // Cuerpo del servicio GET de products. Muestra todos los productos, o los
+  // productos que correspondan con la sentencia limit (en caso de que aplique)
   let limit = req.query.limit;
   
   try {
@@ -30,7 +31,7 @@ routerProd.get("/", async (req, res) => {
 })
 
 routerProd.get("/:pid", async (req, res) => {
-  // Cuerpo del servicio GET by ID de products
+  // Cuerpo del servicio GET by ID de products. Muestra el producto dado su ID (pid)
   const pid = parseInt(req.params.pid);
   try {
     const prod = await pm.getProductById(pid);
@@ -45,7 +46,7 @@ routerProd.get("/:pid", async (req, res) => {
 })
 
 routerProd.post("/", async (req, res) => {
-  // Cuerpo del servicio POST de products
+  // Cuerpo del servicio POST de products. Crea nuevos productos en products.json
   try {
     const conf = await pm.addProduct(req.body);
     if(conf === true) {
@@ -59,7 +60,7 @@ routerProd.post("/", async (req, res) => {
 })
 
 routerProd.put("/:pid", async (req, res) => {
-  // Cuerpo del servicio PUT de products
+  // Cuerpo del servicio PUT de products. Actualiza un producto dado su ID (pid)
   const pid = parseInt(req.params.pid);
   try {
     const conf = await pm.updateProduct(pid, req.body);
@@ -74,7 +75,7 @@ routerProd.put("/:pid", async (req, res) => {
 })
 
 routerProd.delete("/:pid", async (req, res) => {
-  // Cuerpo del servicio DELETE de products
+  // Cuerpo del servicio DELETE de products. Elimina un producto dado su ID (pid)
   const pid = parseInt(req.params.pid);
   try {
     const conf = await pm.deleteProduct(pid);

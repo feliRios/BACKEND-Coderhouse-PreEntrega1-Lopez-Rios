@@ -53,5 +53,60 @@
     "stock": 50,
     "status": true,
     "category": "Comida"
+  },
+  {
+    "id": 6,
+    "title": "Pizza muzza",
+    "description": "XXL",
+    "price": 899,
+    "thumbnail": [],
+    "code": 27266,
+    "stock": 10,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 7,
+    "title": "Tarta de verdura",
+    "description": "Acelga",
+    "price": 299,
+    "thumbnail": [],
+    "code": 27267,
+    "stock": 10,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 8,
+    "title": "Tarta de JyQ",
+    "description": "Jamon y Queso",
+    "price": 299,
+    "thumbnail": [],
+    "code": 27268,
+    "stock": 10,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 9,
+    "title": "Pollo al spiedo",
+    "description": "Comen 3",
+    "price": 1499,
+    "thumbnail": [],
+    "code": 27269,
+    "stock": 10,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 10,
+    "title": "Tira de asado",
+    "description": "Hecha al punto justo",
+    "price": 1899,
+    "thumbnail": [],
+    "code": 27270,
+    "stock": 10,
+    "status": true,
+    "category": "Comida"
   }
 ]
