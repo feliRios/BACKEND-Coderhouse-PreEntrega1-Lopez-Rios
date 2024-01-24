@@ -1,5 +1,4 @@
-import fs from 'fs';
-
+import fs from "fs";
 
 async function writeFile(param_path, param_products) {
   // Funcion: void
@@ -10,7 +9,6 @@ async function writeFile(param_path, param_products) {
     console.log(`Hubo un error al escribir el archivo: ${e}`);
   }
 }
-
 
 class ProductManager {
   constructor(){
