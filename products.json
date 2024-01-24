@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Pancho",
+    "description": "Muy rico",
+    "price": 299,
+    "thumbnail": "http://imagen.com",
+    "code": 27261,
+    "stock": 5,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 2,
+    "title": "Arroz michaliszyn",
+    "description": "Muy rico, yamani",
+    "price": 199,
+    "thumbnail": "default",
+    "code": 27262,
+    "stock": 6,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 3,
+    "title": "Polenta",
+    "description": "Muy rica",
+    "price": 299,
+    "thumbnail": "default",
+    "code": 27263,
+    "stock": 5,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 4,
+    "title": "Empanadas",
+    "description": "Muy ricas",
+    "price": 399,
+    "thumbnail": ["imagen1", "imagen2", "imagen3"],
+    "code": 27264,
+    "stock": 2,
+    "status": true,
+    "category": "Comida"
+  },
+  {
+    "id": 5,
+    "title": "Milanesas de pollo",
+    "description": "Muy ricas, de pollo",
+    "price": 599,
+    "thumbnail": [],
+    "code": 27265,
+    "stock": 50,
+    "status": true,
+    "category": "Comida"
+  }
+]
